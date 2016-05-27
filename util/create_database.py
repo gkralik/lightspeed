@@ -16,10 +16,12 @@ try:
     c.execute('''
     CREATE TABLE IF NOT EXISTS measurements (
         id UNSIGNED INT AUTO_INCREMENT,
-        pingMs UNSIGNED DECIMAL(4, 2),
-        downloadMbit DECIMAL(4, 2),
-        uploadMbit DECIMAL(4, 2),
-        createdOn DATETIME,
+        pingMs UNSIGNED DECIMAL(10, 3),
+        downloadMbit DECIMAL(5, 2),
+        uploadMbit DECIMAL(5, 2),
+        timestamp DATETIME,
+        durationSecs UNSIGNED INT,
+        isError INT DEFAULT 0,
         PRIMARY KEY (id)
     );
     ''')
