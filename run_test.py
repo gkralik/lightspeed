@@ -14,6 +14,8 @@ def save_measurement(db_path, ping, download, upload, timestamp, duration, error
         conn = sqlite3.connect(db_path)
         c = conn.cursor()
 
+        duration = round(duration, 2)
+
         if error:
             is_error = 1
         else:

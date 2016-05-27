@@ -20,7 +20,7 @@ try:
         downloadMbit DECIMAL(5, 2),
         uploadMbit DECIMAL(5, 2),
         timestamp DATETIME,
-        durationSecs UNSIGNED INTEGER,
+        durationSecs UNSIGNED DECIMAL(10, 2),
         isError INTEGER DEFAULT 0
     );
     ''')
