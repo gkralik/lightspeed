@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
 
 try:
     conn = sqlite3.connect(db_path)
-    c = conn.cursor();
+    c = conn.cursor()
 
     c.execute('''
     CREATE TABLE IF NOT EXISTS measurements (
