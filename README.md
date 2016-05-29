@@ -11,7 +11,7 @@ save results to a SQlite3 database.
 Clone the repository and initialize the measurements database.
 
 ```
-$ git clone https://github.com/gkralik/lightspeed.git
+$ git clone --recursive https://github.com/gkralik/lightspeed.git
 
 # create database (if not path given, defaults to db/lightspeed.db)
 $ python util/create_database.py [path/to/database.db]
